@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements - Abdullah Ahmer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://kit.fontawesome.com/bfecbf475a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="nav-name">Abdullah Ahmer</div>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('projects') }}">Projects</a></li>
+            <li><a href="{{ url_for('achievements') }}" class="active">Achievements</a></li>
+            <li><a href="{{ url_for('cv') }}">CV</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="clock" id="clock"></div>
+            <button class="theme-toggle" id="themeToggle">
+                <span class="sun-icon"><i style="color: white;" class="fa-solid fa-lightbulb"></i></span>
+                <span class="moon-icon"><i style="color: black;" class="fa-solid fa-lightbulb"></i></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <h1 class="page-title scroll-reveal">Achievements</h1>
+            <p class="page-subtitle scroll-reveal">Competitions won and milestones achieved</p>
+        </div>
+    </section>
+
+    <section class="achievements-section">
+        <div class="container">
+            <div class="search-container scroll-reveal">
+                <input type="text" id="achievementSearch" placeholder="🔍 Search achievements..." class="search-input">
+            </div>
+
+            <div class="achievements-list" id="achievementsList">
+                <div class="achievement-item scroll-reveal" data-achievement="NRICH-WHICH_IS_BIGGER">
+                    <div class="achievement-icon">🥇</div>
+                    <div class="achievement-content">
+                        <h3>NRICH Solution Published - Which is Bigger</h3>
+                        <p class="achievement-date">8 Jun 2025</p>
+                    </div>
+                    <button class="view-details-btn" data-achievement="NRICH-WHICH_IS_BIGGER">View Details</button>
+                </div>
+
+                <div class="achievement-item scroll-reveal" data-achievement="NRICH-CLIMBING_COMPLEXITY">
+                    <div class="achievement-icon">🤖</div>
+                    <div class="achievement-content">
+                        <h3>NRICH Solution Published - Climbing Complexity</h3>
+                        <p class="achievement-date">8 Jun 2025</p>
+                    </div>
+                    <button class="view-details-btn" data-achievement="NRICH-CLIMBING_COMPLEXITY">View Details</button>
+                </div>
+
+                <div class="achievement-item scroll-reveal" data-achievement="NRICH-SHIFTING_TIMES_TABLES">
+                    <div class="achievement-icon">🌐</div>
+                    <div class="achievement-content">
+                        <h3>NRICH Solution Published - Shifting Times Tables</h3>
+                        <p class="achievement-date">6 May 2025</p>
+                    </div>
+                    <button class="view-details-btn" data-achievement="NRICH-SHIFTING_TIMES_TABLES">View Details</button>
+                </div>
+
+                <div class="achievement-item scroll-reveal" data-achievement="JMC-2025">
+                    <div class="achievement-icon">🚀</div>
+                    <div class="achievement-content">
+                        <h3>Gold Certificate - JMC 2025</h3>
+                        <p class="achievement-date">2 May 2025</p>
+                    </div>
+                    <button class="view-details-btn" data-achievement="JMC-2025">View Details</button>
+                </div>
+
+                <div class="achievement-item scroll-reveal" data-achievement="PCTC-R2-2024-25">
+                    <div class="achievement-icon">🎨</div>
+                    <div class="achievement-content">
+                        <h3>Certificate of Merit - PCTC Round 2 2024-25</h3>
+                        <p class="achievement-date">14 Mar 2025</p>
+                    </div>
+                    <button class="view-details-btn" data-achievement="PCTC-R2-2024-25">View Details</button>
+                </div>
+
+                <div class="achievement-item scroll-reveal" data-achievement="PCTC-R1-2024-25">
+                    <div class="achievement-icon">🔒</div>
+                    <div class="achievement-content">
+                        <h3>Certificate of Distinction - PCTC Round 1 2024-25</h3>
+                        <p class="achievement-date">7 Feb 2025</p>
+                    </div>
+                    <button class="view-details-btn" data-achievement="PCTC-R1-2024-25">View Details</button>
+                </div>
+
+                <div class="achievement-item scroll-reveal" data-achievement="LANGUAGE_NUT-2024">
+                    <div class="achievement-icon">📱</div>
+                    <div class="achievement-content">
+                        <h3>18th Place in Language Nut Competition 2024</h3>
+                        <p class="achievement-date">25 Jun 2024</p>
+                    </div>
+                    <button class="view-details-btn" data-achievement="LANGUAGE_NUT-2024">View Details</button>
+                </div>
+
+                <div class="achievement-item scroll-reveal" data-achievement="PCTC-R1-2023-24">
+                    <div class="achievement-icon">📊</div>
+                    <div class="achievement-content">
+                        <h3>Certificate of Distinction - PCTC Round 1 2023-24</h3>
+                        <p class="achievement-date">2 Feb 2024</p>
+                    </div>
+                    <button class="view-details-btn" data-achievement="PCTC-R1-2023-24">View Details</button>
+                </div>
+
+                <div class="achievement-item scroll-reveal" data-achievement="BEBRAS-R1-2023-24">
+                    <div class="achievement-icon">💻</div>
+                    <div class="achievement-content">
+                        <h3>Gold Certificate in Bebras UK Round 1 2023-24</h3>
+                        <p class="achievement-date">17 Nov 2023</p>
+                    </div>
+                    <button class="view-details-btn" data-achievement="BEBRAS-R1-2023-24">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="achievementModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <div class="modal-details" id="modalDetails"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Abdullah Ahmer. All rights reserved.</p>
+            <div class="social-links">
+                <a href="http://github.com/aahmer1677" class="social-link">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

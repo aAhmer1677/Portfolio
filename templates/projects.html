@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Abdullah Ahmer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://kit.fontawesome.com/bfecbf475a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="nav-name">Abdullah Ahmer</div>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('projects') }}" class="active">Projects</a></li>
+            <li><a href="{{ url_for('achievements') }}">Achievements</a></li>
+            <li><a href="{{ url_for('cv') }}">CV</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="clock" id="clock"></div>
+            <button class="theme-toggle" id="themeToggle">
+                <span class="sun-icon"><i style="color: white;" class="fa-solid fa-lightbulb"></i></span>
+                <span class="moon-icon"><i style="color: black;" class="fa-solid fa-lightbulb"></i></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <h1 class="page-title scroll-reveal">My Projects</h1>
+            <p class="page-subtitle scroll-reveal">A showcase of my creative work and technical expertise</p>
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid">
+                <div class="project-card scroll-reveal">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/aAhmer1677/Portfolio" class="project-link">Source</a>
+                            <span style="width: 1rem;"></span>
+                            <a href="{{ url_for('index') }}" class="project-link">Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>Personal portfolio with custom cursor effects, theme switching, and smooth animations built with Flask.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CS</span>
+                            <span class="tag">JS</span>
+                            <span class="tag">Flask</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card scroll-reveal">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/aAhmer1677/BankingSoftware" class="project-link">View Source</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Banking Software</h3>
+                        <p>A full-stack python app which stimulates bank databases from a customers end.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">OOP</span>
+                            <span class="tag">TXT Database</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card scroll-reveal">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>A collaborative task management application with real-time updates and team features.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Abdullah Ahmer. All rights reserved.</p>
+            <div class="social-links">
+                <a href="http://github.com/aahmer1677" class="social-link">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

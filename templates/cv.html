@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Abdullah Ahmer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://kit.fontawesome.com/bfecbf475a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="nav-name">Abdullah Ahmer</div>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('projects') }}">Projects</a></li>
+            <li><a href="{{ url_for('achievements') }}">Achievements</a></li>
+            <li><a href="{{ url_for('cv') }}" class="active">CV</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="clock" id="clock"></div>
+            <button class="theme-toggle" id="themeToggle">
+                <span class="sun-icon"><i style="color: white;" class="fa-solid fa-lightbulb"></i></span>
+                <span class="moon-icon"><i style="color: black;" class="fa-solid fa-lightbulb"></i></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="page-header parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <h1 class="page-title scroll-reveal">Curriculum Vitae</h1>
+            <p class="page-subtitle scroll-reveal">My professional background and experience</p>
+        </div>
+    </section>
+
+    <section class="cv-section">
+        <div class="container">
+            <div class="cv-actions scroll-reveal">
+                <a href="{{ url_for('static', filename='assets/cv.pdf') }}" download class="btn btn-primary">
+                    <span><i class="fa-regular fa-floppy-disk"></i></span> Download CV
+                </a>
+                <a href="{{ url_for('static', filename='assets/cv.pdf') }}" target="_blank" class="btn btn-secondary">
+                    <span><i class="fa-solid fa-link"></i></span> Open in New Tab
+                </a>
+            </div>
+            <div class="cv-viewer scroll-reveal">
+                <iframe id="cvFrame" src="{{ url_for('static', filename='assets/cv.pdf') }}" frameborder="0" style="width: 100%; height: 800px;"></iframe>
+            </div>
+
+            <div class="cv-highlights scroll-reveal">
+                <h2 class="section-title">Quick Highlights</h2>
+                <div class="highlights-grid">
+                    <div class="highlight-card scroll-reveal">
+                        <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                        <p>Currently Enrolled at Doha College</p>
+                        <p class="highlight-detail">No. 1 School in Doha</p>
+                    </div>
+                    <div class="highlight-card scroll-reveal">
+                        <h3><i class="fa-solid fa-screwdriver-wrench"></i> Technical Skills</h3>
+                        <p>Programming</p>
+                        <p class="highlight-detail">5+ Programming Languages mastered</p>
+                    </div>
+                    <div class="highlight-card scroll-reveal">
+                        <h3><i class="fa-solid fa-earth-asia"></i> Languages</h3>
+                        <p>English, Urdu, French</p>
+                        <p class="highlight-detail">Fluent in multiple languages</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Abdullah Ahmer. All rights reserved.</p>
+            <div class="social-links">
+                <a href="http://github.com/aahmer1677" class="social-link">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
