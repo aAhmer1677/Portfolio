@@ -10,8 +10,8 @@ You may not copy, reuse, modify, publish, distribute, or create derivative works
 
 ## Live Website
 
-- GitHub: https://vercel.com/aahmer1677s-projects/portfolio/4E1uBjbLRbvrt86Wi4uu57xdSDC4
-
+- Vercel: [https://vercel.com/aahmer1677s-projects/portfolio/4E1uBjbLRbvrt86Wi4uu57xdSDC4
+](https://portfolio-ctbmnm2rj-aahmer1677s-projects.vercel.app/)
 ## Features
 
 - Multi-page Flask application
@@ -115,5 +115,6 @@ For production use, consider replacing this with:
 All rights reserved. This project is proprietary.
 
 See LICENSE for full terms.
+
 
 
