@@ -32,7 +32,7 @@ You may not copy, reuse, modify, publish, distribute, or create derivative works
 
 ## Project Structure
 
-```text
+```Portfoflio
 .
 |-- app.py
 |-- data.txt
@@ -115,3 +115,4 @@ For production use, consider replacing this with:
 All rights reserved. This project is proprietary.
 
 See LICENSE for full terms.
+
