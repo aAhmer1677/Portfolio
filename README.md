@@ -2,9 +2,15 @@
 
 A modern personal portfolio website built with Flask, featuring animated UI elements, theme switching, project and achievement pages, CV download/view, and a contact form.
 
-## Live Repository
+## Usage Notice
 
-- GitHub: https://github.com/aAhmer1677/Portfolio
+This repository is proprietary and not open source.
+
+You may not copy, reuse, modify, publish, distribute, or create derivative works from this project without explicit prior written permission from the owner.
+
+## Live Website
+
+- GitHub: https://vercel.com/aahmer1677s-projects/portfolio/4E1uBjbLRbvrt86Wi4uu57xdSDC4
 
 ## Features
 
@@ -106,4 +112,6 @@ For production use, consider replacing this with:
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+All rights reserved. This project is proprietary.
+
+See LICENSE for full terms.
