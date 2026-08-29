@@ -10,7 +10,8 @@ You may not copy, reuse, modify, publish, distribute, or create derivative works
 
 ## Live Website
 
-- Vercel: [[https://abdullah-ahmer-portfolio.vercel.app](https://abdullah-ahmer-portfolio.vercel.app)]
+- GitHub: https://abdullah-ahmer-portfolio.vercel.app
+
 ## Features
 
 - Multi-page Flask application
@@ -31,13 +32,14 @@ You may not copy, reuse, modify, publish, distribute, or create derivative works
 
 ## Project Structure
 
-```text Portfoflio
+```text
 .
 |-- app.py
 |-- data.txt
 |-- requirements.txt
 |-- static/
 |   |-- assets/
+        `-- cv.pdf
 |   |-- css/
 |   |   `-- styles.css
 |   `-- js/
@@ -58,62 +60,9 @@ You may not copy, reuse, modify, publish, distribute, or create derivative works
 - /cv: CV page
 - /contact: Contact form page (GET and POST)
 
-## Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/aAhmer1677/Portfolio.git
-cd Portfolio
-```
-
-### 2. Create and activate a virtual environment
-
-Windows PowerShell:
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
-
-macOS/Linux:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-### 3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Run the application
-
-```bash
-python app.py
-```
-
-Then open:
-
-- http://127.0.0.1:5000
-
-## Contact Form Storage Note
-
-Submitted messages are currently appended to data.txt in plain text.
-
-For production use, consider replacing this with:
-
-- A database (for example PostgreSQL or SQLite)
-- Input sanitization and stricter validation
-- Email delivery integration or a backend queue
 
 ## License
 
 All rights reserved. This project is proprietary.
 
 See LICENSE for full terms.
-
-
-

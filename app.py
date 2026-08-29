@@ -1,7 +1,8 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
+import os
+from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory
 from datetime import datetime
 
-app = Flask(__name__, static_folder='static')
+app = Flask(__name__, static_folder='static', static_url_path='/static')
 app.secret_key = 'secret'
 
 
@@ -51,6 +52,14 @@ def contact():
 @app.route('/cv')
 def cv():
     return render_template('cv.html')
+
+@app.route('/cv/download')
+def download_cv():
+    return send_from_directory(os.path.join(app.root_path, 'static', 'assets'), 'cv.pdf', as_attachment=True)
+
+@app.route('/cv/view')
+def view_cv():
+    return send_from_directory(os.path.join(app.root_path, 'static', 'assets'), 'cv.pdf')
 
 @app.route('/projects')
 def projects():

@@ -40,15 +40,12 @@
     <section class="cv-section">
         <div class="container">
             <div class="cv-actions scroll-reveal">
-                <a href="{{ url_for('static', filename='assets/cv.pdf') }}" download class="btn btn-primary">
+                <a href="{{ url_for('download_cv') }}" download class="btn btn-primary">
                     <span><i class="fa-regular fa-floppy-disk"></i></span> Download CV
                 </a>
-                <a href="{{ url_for('static', filename='assets/cv.pdf') }}" target="_blank" class="btn btn-secondary">
+                <a href="{{ url_for('view_cv') }}" target="_blank" class="btn btn-secondary">
                     <span><i class="fa-solid fa-link"></i></span> Open in New Tab
                 </a>
-            </div>
-            <div class="cv-viewer scroll-reveal">
-                <iframe id="cvFrame" src="{{ url_for('static', filename='assets/cv.pdf') }}" frameborder="0" style="width: 100%; height: 800px;"></iframe>
             </div>
 
             <div class="cv-highlights scroll-reveal">

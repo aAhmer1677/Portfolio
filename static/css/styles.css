@@ -35,11 +35,23 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    background: var(--bg-primary);
+    background:
+        radial-gradient(circle at top left, rgba(23, 212, 254, 0.18), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.18), transparent 30%),
+        var(--bg-primary);
     color: var(--text-primary);
     cursor: none;
     overflow-x: hidden;
     transition: background 0.3s ease, color 0.3s ease;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+    pointer-events: none;
+    z-index: -1;
 }
 
 .cursor,
@@ -195,6 +207,7 @@ button:hover ~ .cursor,
     position: relative;
     overflow: hidden;
     padding-top: 80px;
+    background: linear-gradient(180deg, rgba(15,22,36,0.7), rgba(15,22,36,0.15));
 }
 
 .parallax-section {
@@ -244,12 +257,13 @@ button:hover ~ .cursor,
 
 .glitch {
     font-family: 'Orbitron', sans-serif;
-    font-size: 4rem;
+    font-size: clamp(2.7rem, 6vw, 5.2rem);
     font-weight: 900;
     position: relative;
     margin-bottom: 1rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+    text-shadow: 0 0 20px rgba(23, 212, 254, 0.26);
 }
 
 .glitch::before,
@@ -317,12 +331,14 @@ button:hover ~ .cursor,
     padding: 1rem 2rem;
     border-radius: 50px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: 0.03em;
     cursor: none;
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
     border: 2px solid transparent;
+    box-shadow: 0 10px 25px rgba(23, 212, 254, 0.12);
 }
 
 .btn-primary {
@@ -454,9 +470,10 @@ button:hover ~ .cursor,
 .stat-item {
     text-align: center;
     padding: 1.5rem;
-    background: var(--bg-card);
-    border-radius: 15px;
+    background: linear-gradient(180deg, rgba(23,212,254,0.06), rgba(255,255,255,0.02));
+    border-radius: 18px;
     border: 1px solid var(--glass-border);
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
 }
 
 .stat-number {
@@ -533,7 +550,7 @@ button:hover ~ .cursor,
 }
 
 .skill-card {
-    background: var(--glass-bg);
+    background: linear-gradient(180deg, rgba(15,22,36,0.72), rgba(23,212,254,0.04));
     backdrop-filter: blur(10px);
     padding: 2rem;
     border-radius: 20px;
